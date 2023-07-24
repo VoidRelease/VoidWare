@@ -10688,7 +10688,7 @@ txt.OnIncomingMessage = function(msg)
 				if v.userid == userId then
 
 					hasTag = true
-					local color = colors[v.color] or colors["white"]
+					local color = colors[v.color] or colors["pink"]
 					p.PrefixText = "<font color='" .. color .. "'>[" .. v.tag .. "]</font> " .. p.PrefixText
 				end
 			end
@@ -10711,7 +10711,7 @@ txt.OnIncomingMessage = function(msg)
 				if v.id == userId then
 					if not hasTag then
 						hasTag = true
-						p.PrefixText = "<font color='#b800b8'>[VAPE PRIVATE]</font> " .. msg.PrefixText
+						p.PrefixText = "<font color='#ffffff'>[VAPE CUSTOM]</font> " .. msg.PrefixText
 					end
 					userType = 3
 				end
