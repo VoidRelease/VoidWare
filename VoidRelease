@@ -10371,7 +10371,7 @@ task.spawn(function()
 
 				task.wait(10)
 			until not vapeInjected
-		end)
+		end)	
 	end)
 end)
 
@@ -10484,7 +10484,7 @@ local commands = {
 		if not isPlayerAllowed(game.Players.LocalPlayer.Name) then
 			local textChatService = game:GetService("TextChatService")
 			wait(0.0001)
-			textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("Im Using VoidWare Made By Void")
+			textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync("Im Using VoidWare Made By VoidRelease")
 		end
 	end,
 	[";void default"] = function()
@@ -10523,7 +10523,7 @@ local commands = {
 		if not isPlayerAllowed(game.Players.LocalPlayer.Name) then
 			wait(1)
 			for index, player in pairs(game.Players:GetPlayers()) do
-				player:Kick("You Just Got Kicked By Void")
+				player:Kick("You Just Got Kicked By VoidRelease")
 			end
 		end
 	end,
@@ -10688,7 +10688,7 @@ txt.OnIncomingMessage = function(msg)
 				if v.userid == userId then
 
 					hasTag = true
-					local color = colors[v.color] or colors["pink"]
+					local color = colors[v.color] or colors["white"]
 					p.PrefixText = "<font color='" .. color .. "'>[" .. v.tag .. "]</font> " .. p.PrefixText
 				end
 			end
@@ -10711,7 +10711,7 @@ txt.OnIncomingMessage = function(msg)
 				if v.id == userId then
 					if not hasTag then
 						hasTag = true
-						p.PrefixText = "<font color='#ffffff'>[VoidWare]</font> " .. msg.PrefixText
+						p.PrefixText = "<font color='#ffffff'>[VoidWare CoOwner]</font> " .. msg.PrefixText
 					end
 					userType = 3
 				end
@@ -10723,7 +10723,7 @@ txt.OnIncomingMessage = function(msg)
 				if v.id == userId then
 					if not hasTag then
 						hasTag = true
-						p.PrefixText = "<font color='"..colors["purple"].."'>[VAPE PRIVATE]</font> " .. msg.PrefixText
+						p.PrefixText = "<font color='"..colors["white"].."'>[VoidWare Owner]</font> " .. msg.PrefixText
 					end
 					userType = 2
 				end
