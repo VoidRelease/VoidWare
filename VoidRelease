@@ -10733,3 +10733,5 @@ txt.OnIncomingMessage = function(msg)
 
 	return p
 end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SnoopyOwner/Modules/main/SP%2B%20Modules"))()
